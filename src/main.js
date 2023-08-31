@@ -1,6 +1,5 @@
-import './assets/main.css'
+import { createApp } from "vue";
+import App from "./App.vue";
+import router from "./router"; // Asegúrate de que el router está siendo importado aquí
 
-import { createApp } from 'vue'
-import App from './App.vue'
-
-createApp(App).mount('#app')
+createApp(App).use(router).mount("#app"); // Asegúrate de que estás usando el router aquí
